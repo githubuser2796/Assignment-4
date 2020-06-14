@@ -4,11 +4,10 @@
 angular.module('MenuApp')
 .controller('itemsController', itemsController);
 
-
-itemsController.$inject = ['catItems'];
-function itemsController(catItems) {
+itemsController.$inject = ['catitems'];
+function itemsController(catitems) {
 var itctrl = this;
-itctrl.catItems = catItems.data.menu_items;
+itctrl.catitems = catitems.data.menu_items;
 }
 
 })();
